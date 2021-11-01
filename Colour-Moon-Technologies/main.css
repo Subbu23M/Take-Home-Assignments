@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover, a {
+  text-decoration: none !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header .logo sup {
+  vertical-align: super;
+}
+
+#about .image-container {
+  /* position: relative, it’ll remain “in the flow” of the layout but you can move it around! */
+  position: relative;
+}
+
+#about .image-container .first-image {
+  /* position: absolute takes elements “out of flow” so its grid space gets collapsed. */
+  position: absolute;
+  left: -10%;
+  top: 10%;
+  /* z-index:stacks one on each other based on value  */
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */

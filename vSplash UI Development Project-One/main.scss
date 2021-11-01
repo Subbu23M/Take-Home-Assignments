@@ -1,0 +1,429 @@
+// Colors
+$topBackgroundColor:#87509c;
+$topButtonBackgroundColor:#eb7d4b;
+$topContentColor:#f7f3ea;
+$navLinksHoverColor:#643a79;
+$paragraphColor:#f7f3ea;
+$serviceSectionBackgroundColor:#17c2a4;
+$meetBackgroundColor:#e7f1f8;
+
+$fontFamily:'Titillium Web',sans-serif;
+
+// Universal Affects
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+
+button{
+    font-family: $fontFamily;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+// For Header
+header .top-section{
+    background-color: $topBackgroundColor;
+    // width: 100%;
+    // height: 400px;
+    padding: 2rem;
+
+    nav{
+        // Converts column into row
+        display: flex;
+
+        // On X-axis
+        justify-content: space-around;
+
+        // On Y-axis
+        align-items: center;
+
+        .logo{
+            margin-bottom: 2rem;
+
+            // a img{
+            //     width: 90px;
+            // }
+        }
+
+        .nav-links{
+        
+            ul{
+                // Displays an element as an inline-level flex container.
+                display: inline-flex;
+
+                li{
+
+                    a{
+                        padding: 0.7rem;
+                        color: #fff;
+                        font-weight: 400;
+                        font-size: 1.2rem;
+                        text-transform: uppercase;
+
+                        &:hover{
+                            background-color: $navLinksHoverColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        text-align: center;
+        font-size: 2.6rem;
+        color: $paragraphColor;
+        font-weight: 700;
+        margin-top: 3rem;
+    }
+
+    .button{
+        margin-top: 2.1rem;
+        .btn {
+            background-color: $topButtonBackgroundColor;
+
+            &:hover{
+                background-color: wheat;
+            }
+
+            h6{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+// For Services
+.service-section{
+    // width: 100%;
+    // height: 495px;
+    background-color: $serviceSectionBackgroundColor;
+    padding: 0.7rem;
+
+    h5{
+        color: #fff;
+        letter-spacing: 0.1rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    .underline{
+        width: 100px;
+        height: 5px;
+        background-color: #000;
+    }
+
+    .para{
+        color: #fff;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .services{
+        margin: 0.7rem;
+
+        h4{
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 1rem;
+            color: #fff;
+        }
+
+    }
+}
+
+// Meet our people
+.meet-section{
+    // width: 100%;
+    // height: 495px;
+    background-color: $meetBackgroundColor;
+    padding: 2rem;
+
+    h4{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: #3c4761;
+        font-weight: 700;
+    }
+
+    .underline{
+        width: 100px;
+        height: 5px;
+        background-color:#bdd1df;
+    }
+
+    p{
+        font-size: 0.8rem;
+        color: #3c4761;
+        font-weight: 400;
+        margin-top: 0.5rem;
+    }
+
+    .team-section{
+        // Converts row into column
+        display: grid;
+
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 4%;
+
+        padding: 0.5rem;
+    
+        .team-member{
+            margin: 0.4rem;
+
+            .name{
+                h5{
+                    color: #27283d;
+                    font-weight: 700;
+                }
+            }
+
+            .info{
+                p{
+                    color: #3c4761;
+                    font-weight: 300;
+                }
+            }
+
+            .social-media-icons{
+                .box{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50px;
+                    background-color: gray;
+                }
+            }
+        }
+    }
+}
+
+// Skills
+.skills-section{
+    width: 1440px;
+    height: 655px;
+    background-color: #fff;
+    padding: 3rem;
+
+    h4{
+        font-size: 40px;
+        letter-spacing: 3px;
+        color: #3c4761;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .underline{
+        width: 100px;
+        height: 5px;
+        background-color: gray;
+    }
+
+    p{
+        color: gray;
+        margin-top: 1rem;
+    }
+
+}
+
+// Portfolio
+.portfolio-section{
+    // width: 100%;
+    // height: 1000px;
+    background-color: #ffdd99;
+    padding: 1.2rem;
+
+    .para{
+
+        h4 {
+            font-size: 2.3rem;
+            letter-spacing: 3px;
+            color: #3c4761;
+            font-weight: 700;
+        }
+    
+        .underline {
+            width: 100px;
+            height: 5px;
+            background-color: gray;
+        }
+    
+        .lorem{
+            color:#393939;
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    .btn-one{
+        background-color: white;
+    }
+
+    .laptops{
+        padding: 2rem;
+
+        .title,.title-two,.title-three,.title-four {
+            font-size: 18px;
+            font-weight: 400;
+            color: #393939;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+        }
+
+        .button{
+    
+            .btn-bottom{
+                background-color: #17c2a4;
+
+                &:hover{
+                    background-color:teal;
+                }
+            }
+
+        }
+    }
+}
+
+// Review
+.review-section{
+    // width: 100%;
+    // height: 470px;
+    background-color: #d74680;
+    padding: 2rem;
+
+    h4{
+        letter-spacing: 2px;
+    }
+
+    .underline{
+        width: 100px;
+        height: 5px;
+        background-color: gray;
+    }
+
+    .reviews{
+
+        .image{
+            margin-top: 0.4rem;
+        }
+
+        .content{
+
+            p{
+                color: #fff;
+                font-style: italic;
+            }
+
+            h6{
+                color: wheat;
+            }
+
+        }
+
+        .top{
+            margin-top: 3rem;
+        }
+
+    }
+
+}
+
+// Contact
+.contact-section{
+    // width: 100%;
+    // height: 700px;
+
+    background-color: #3c5499;
+    padding: 2rem;
+
+    h4{
+        letter-spacing: 5px;
+    }
+
+    .underline{
+        width: 100px;
+        height: 5px;
+        background-color: black;
+    }
+
+    .form-section{
+
+        ::placeholder{
+            color: #fff;
+        }
+
+        .form-control{
+            background-color: #273a71;
+            color: white;
+            border-color: black;
+    
+            &:focus{
+                outline: none;
+            }
+
+        }
+    
+        textarea{
+            background-color: #273a71;
+            border: none;
+            padding: 1rem;
+    
+            &:focus{
+                outline: none;
+            }
+        }
+
+    }
+
+}
+
+footer{
+    // width: 100%;
+    // height: 70px;
+
+    background-color: #344b8e;
+    padding: 1rem;
+    
+    ul{
+        // Convert column into row
+        display: flex;
+
+        // On X-axis
+        justify-content: space-around;
+
+        // On Y-axis
+        align-items: center;
+
+        li{
+            a{
+                font-size: 20px;
+            }
+        }
+
+    }
+}

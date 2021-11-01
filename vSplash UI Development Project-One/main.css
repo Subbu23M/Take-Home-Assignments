@@ -1,0 +1,367 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: tomato;
+}
+
+button {
+  font-family: "Titillium Web", sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+header .top-section {
+  background-color: #87509c;
+  padding: 2rem;
+}
+
+header .top-section nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-section nav .logo {
+  margin-bottom: 2rem;
+}
+
+header .top-section nav .nav-links ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header .top-section nav .nav-links ul li a {
+  padding: 0.7rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+header .top-section nav .nav-links ul li a:hover {
+  background-color: #643a79;
+}
+
+header .top-section .content {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #f7f3ea;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+header .top-section .button {
+  margin-top: 2.1rem;
+}
+
+header .top-section .button .btn {
+  background-color: #eb7d4b;
+}
+
+header .top-section .button .btn:hover {
+  background-color: wheat;
+}
+
+header .top-section .button .btn h6 {
+  font-size: 1.4rem;
+}
+
+.service-section {
+  background-color: #17c2a4;
+  padding: 0.7rem;
+}
+
+.service-section h5 {
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.service-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: #000;
+}
+
+.service-section .para {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.service-section .services {
+  margin: 0.7rem;
+}
+
+.service-section .services h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.service-section .services p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.meet-section {
+  background-color: #e7f1f8;
+  padding: 2rem;
+}
+
+.meet-section h4 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #3c4761;
+  font-weight: 700;
+}
+
+.meet-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: #bdd1df;
+}
+
+.meet-section p {
+  font-size: 0.8rem;
+  color: #3c4761;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.meet-section .team-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 4%;
+          column-gap: 4%;
+  padding: 0.5rem;
+}
+
+.meet-section .team-section .team-member {
+  margin: 0.4rem;
+}
+
+.meet-section .team-section .team-member .name h5 {
+  color: #27283d;
+  font-weight: 700;
+}
+
+.meet-section .team-section .team-member .info p {
+  color: #3c4761;
+  font-weight: 300;
+}
+
+.meet-section .team-section .team-member .social-media-icons .box {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: gray;
+}
+
+.skills-section {
+  width: 1440px;
+  height: 655px;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.skills-section h4 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #3c4761;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.skills-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: gray;
+}
+
+.skills-section p {
+  color: gray;
+  margin-top: 1rem;
+}
+
+.portfolio-section {
+  background-color: #ffdd99;
+  padding: 1.2rem;
+}
+
+.portfolio-section .para h4 {
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  color: #3c4761;
+  font-weight: 700;
+}
+
+.portfolio-section .para .underline {
+  width: 100px;
+  height: 5px;
+  background-color: gray;
+}
+
+.portfolio-section .para .lorem {
+  color: #393939;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.portfolio-section .btn-one {
+  background-color: white;
+}
+
+.portfolio-section .laptops {
+  padding: 2rem;
+}
+
+.portfolio-section .laptops .title, .portfolio-section .laptops .title-two, .portfolio-section .laptops .title-three, .portfolio-section .laptops .title-four {
+  font-size: 18px;
+  font-weight: 400;
+  color: #393939;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.portfolio-section .laptops .button .btn-bottom {
+  background-color: #17c2a4;
+}
+
+.portfolio-section .laptops .button .btn-bottom:hover {
+  background-color: teal;
+}
+
+.review-section {
+  background-color: #d74680;
+  padding: 2rem;
+}
+
+.review-section h4 {
+  letter-spacing: 2px;
+}
+
+.review-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: gray;
+}
+
+.review-section .reviews .image {
+  margin-top: 0.4rem;
+}
+
+.review-section .reviews .content p {
+  color: #fff;
+  font-style: italic;
+}
+
+.review-section .reviews .content h6 {
+  color: wheat;
+}
+
+.review-section .reviews .top {
+  margin-top: 3rem;
+}
+
+.contact-section {
+  background-color: #3c5499;
+  padding: 2rem;
+}
+
+.contact-section h4 {
+  letter-spacing: 5px;
+}
+
+.contact-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: black;
+}
+
+.contact-section .form-section ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact-section .form-section :-ms-input-placeholder {
+  color: #fff;
+}
+
+.contact-section .form-section ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.contact-section .form-section ::placeholder {
+  color: #fff;
+}
+
+.contact-section .form-section .form-control {
+  background-color: #273a71;
+  color: white;
+  border-color: black;
+}
+
+.contact-section .form-section .form-control:focus {
+  outline: none;
+}
+
+.contact-section .form-section textarea {
+  background-color: #273a71;
+  border: none;
+  padding: 1rem;
+}
+
+.contact-section .form-section textarea:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #344b8e;
+  padding: 1rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li a {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */

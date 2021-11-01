@@ -1,0 +1,309 @@
+// Universal Affects
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+button{
+    font-family: 'Open Sans',sans-serif;
+}
+
+// For header
+header{
+    background: url(../images/banner.jpg);
+
+    nav{
+        // Convert column into row.
+        display: flex;
+
+        // On X-axis
+        justify-content: space-around;
+
+        .left-section{
+            h3{
+                color: whitesmoke;
+                font-weight:700;
+            }
+        }
+
+        .right-section{
+            // Convert column into row.
+            display: flex;
+
+            padding: 1rem;
+
+            .logo{
+                img{
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+            }
+
+            a{
+                color:lightgrey;
+                margin-top: 0.3rem;
+
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .header-content{
+        color: linen;
+        text-align: center;
+        margin-top: 6rem;
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .banner-image{
+        img{
+            margin-left: 10rem;
+            width: 1000px;
+        }
+    }
+}
+
+// For main section
+main{
+    .company-logos{
+        text-align: center;
+
+        img{
+            padding: 1.1rem;
+        }
+
+        .four{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .believe-section{
+        text-align: center;
+        color: darkblue;
+        margin-top: 2rem;
+        padding: 2rem;
+
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .aim-section{
+        padding: 1rem;
+        background-color:lightgray;
+
+        h1{
+            text-align: center;
+            color: darkblue;
+
+            span{
+                color: red;
+            }
+        }
+
+        .grid-section{
+            // convert row into column
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 10rem;
+            margin-top: 2rem;
+
+            .contains{
+                color: darkblue;
+
+                h4{
+                    text-transform:uppercase;
+
+                    &::first-letter{
+                        color: red;
+                    }
+                }
+
+                p{
+                    margin-top: -1.4rem;
+                    font-size: 1rem;
+                }
+
+            }
+        }
+    }
+
+    .standout-section{
+        padding: 4rem;
+        color: darkblue;
+
+        // Convert row into column
+        display: grid;
+
+        grid-template-columns: repeat(2,1fr);
+
+        .left-section{
+            h3{
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            .standout-one{
+                // Convert column into row. 
+                display: flex;
+
+                .icon{
+                    img{
+                        margin-top: 1.4rem;
+                        margin-right: 2rem;
+                    }
+                }
+
+                .content{
+                    p{
+                        margin-top: -1rem;
+                        font-size: 0.7rem;
+                    }
+                }
+                .content-two{
+                    margin-left: -0.4rem;
+                }
+            }
+        }
+
+        .right-sectio{
+            color: darkblue;
+            padding: 1rem;
+            margin-top: 2.2rem;
+
+            .logos{
+                // Convert column into row
+                display: flex;
+
+                // On X-axis
+                justify-content: space-between;
+
+                .survey{
+                    color: black;
+                }
+                
+            }
+        }
+    }
+
+    .profile-section{
+        background: url(../images/banner.jpg);
+        padding: 2.2rem;
+
+        h2{
+            text-align: center;
+            font-weight: 400;
+            color: whitesmoke;
+        }
+
+        .profiles{
+            // Convert row into column
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 4rem;
+
+            .profile-card-section {
+                width: 247px;
+                height: 298px;
+                background-color: white;
+                padding: 1rem;
+                text-align: center;
+                color: darkblue;
+
+                p {
+                    text-align: left;
+                    color:gray;
+                }
+            }
+
+            h5 {
+                width: 250px;
+                background-color: darkblue;
+                color: white;
+                margin-left: -1rem;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+
+        .para{
+            font-size: 0.8rem;
+        }
+
+    }
+
+}
+
+footer{
+    background-color: lightgray;
+    color:darkblue;
+    text-align: center;
+    padding: 1rem;
+
+    p{
+        margin-top: -1.4rem;
+    }
+
+    .footer-text{
+        // Convert row into column
+        display: grid;
+
+        grid-template-columns: repeat(3,1fr);
+        padding: 2rem;
+
+        .footer-one,.footer-three{
+            color: linen;
+
+            h4{
+                margin-top: -0.5rem;
+            }
+
+            .text{
+                h5{
+                    background-color: darkblue;
+                    width: 150px;
+                    height: 25px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: -1rem;
+                    padding: 0.2rem;
+                }
+            }
+        }
+        .footer-three{
+            margin-top: 1.7rem;
+        }
+
+        .footer-two{
+            // border-left:size style color
+            border-left: 3px solid gray;
+
+            height: 130px;
+            margin-left: 12rem;
+        }
+    }
+
+}
+
+.tagline{
+    text-align: center;
+    color: teal;
+}

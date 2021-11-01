@@ -1,0 +1,287 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Open Sans',sans-serif;
+}
+
+header {
+  background: url(../images/banner.jpg);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav .left-section h3 {
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+header nav .right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+header nav .right-section .logo img {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+header nav .right-section a {
+  color: lightgrey;
+  margin-top: 0.3rem;
+}
+
+header nav .right-section a:hover {
+  color: red;
+}
+
+header .header-content {
+  color: linen;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+header .header-content p {
+  font-size: 1.2rem;
+}
+
+header .banner-image img {
+  margin-left: 10rem;
+  width: 1000px;
+}
+
+main .company-logos {
+  text-align: center;
+}
+
+main .company-logos img {
+  padding: 1.1rem;
+}
+
+main .company-logos .four {
+  margin-bottom: 1rem;
+}
+
+main .believe-section {
+  text-align: center;
+  color: darkblue;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+main .believe-section p {
+  font-size: 1rem;
+}
+
+main .aim-section {
+  padding: 1rem;
+  background-color: lightgray;
+}
+
+main .aim-section h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+main .aim-section h1 span {
+  color: red;
+}
+
+main .aim-section .grid-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+main .aim-section .grid-section .contains {
+  color: darkblue;
+}
+
+main .aim-section .grid-section .contains h4 {
+  text-transform: uppercase;
+}
+
+main .aim-section .grid-section .contains h4::first-letter {
+  color: red;
+}
+
+main .aim-section .grid-section .contains p {
+  margin-top: -1.4rem;
+  font-size: 1rem;
+}
+
+main .standout-section {
+  padding: 4rem;
+  color: darkblue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+main .standout-section .left-section h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main .standout-section .left-section .standout-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .standout-section .left-section .standout-one .icon img {
+  margin-top: 1.4rem;
+  margin-right: 2rem;
+}
+
+main .standout-section .left-section .standout-one .content p {
+  margin-top: -1rem;
+  font-size: 0.7rem;
+}
+
+main .standout-section .left-section .standout-one .content-two {
+  margin-left: -0.4rem;
+}
+
+main .standout-section .right-sectio {
+  color: darkblue;
+  padding: 1rem;
+  margin-top: 2.2rem;
+}
+
+main .standout-section .right-sectio .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .standout-section .right-sectio .logos .survey {
+  color: black;
+}
+
+main .profile-section {
+  background: url(../images/banner.jpg);
+  padding: 2.2rem;
+}
+
+main .profile-section h2 {
+  text-align: center;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+main .profile-section .profiles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-left: 4rem;
+}
+
+main .profile-section .profiles .profile-card-section {
+  width: 247px;
+  height: 298px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  color: darkblue;
+}
+
+main .profile-section .profiles .profile-card-section p {
+  text-align: left;
+  color: gray;
+}
+
+main .profile-section .profiles h5 {
+  width: 250px;
+  background-color: darkblue;
+  color: white;
+  margin-left: -1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+main .profile-section .para {
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: lightgray;
+  color: darkblue;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin-top: -1.4rem;
+}
+
+footer .footer-text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+footer .footer-text .footer-one, footer .footer-text .footer-three {
+  color: linen;
+}
+
+footer .footer-text .footer-one h4, footer .footer-text .footer-three h4 {
+  margin-top: -0.5rem;
+}
+
+footer .footer-text .footer-one .text h5, footer .footer-text .footer-three .text h5 {
+  background-color: darkblue;
+  width: 150px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1rem;
+  padding: 0.2rem;
+}
+
+footer .footer-text .footer-three {
+  margin-top: 1.7rem;
+}
+
+footer .footer-text .footer-two {
+  border-left: 3px solid gray;
+  height: 130px;
+  margin-left: 12rem;
+}
+
+.tagline {
+  text-align: center;
+  color: teal;
+}
+/*# sourceMappingURL=main.css.map */

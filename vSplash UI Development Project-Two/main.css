@@ -1,0 +1,276 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+header .top-header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-header .contact {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.4rem;
+}
+
+header .top-header .contact .contact-number .contact-number-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 1rem;
+}
+
+header .top-header .contact .contact-number .contact-number-icon .fa-phone-alt {
+  color: #a97f3f;
+}
+
+header .top-header .contact .contact-number .contact-number-icon .fa-phone-alt:hover {
+  color: blue;
+}
+
+header .top-header .contact .button {
+  margin: 0.4rem;
+}
+
+header .top-header .contact .button .btn {
+  background-color: #ecd680;
+  color: #000;
+}
+
+header .top-header .contact .button .btn:hover {
+  color: #fff;
+}
+
+header nav {
+  background-color: #000;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -12rem;
+}
+
+header nav ul li {
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+header nav ul li a:hover {
+  color: #ecd680;
+}
+
+.banner-section {
+  background: url(./images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+  margin-top: -16px;
+}
+
+.banner-section .content {
+  margin-top: 9rem;
+  margin-left: 4rem;
+}
+
+.banner-section .content p {
+  color: #222;
+  font-weight: 400;
+}
+
+.banner-section .content .btn {
+  background-color: #000;
+  color: #ecd680;
+}
+
+.banner-section .content .btn:hover {
+  color: #a97f3f;
+}
+
+.oklahoma .context {
+  padding: 3rem;
+}
+
+.oklahoma .oak {
+  margin-top: 8rem;
+}
+
+.oklahoma .oak .underline {
+  width: 50px;
+  height: 5px;
+  background-color: #ecd680;
+}
+
+.oklahoma .oak p {
+  font-size: 15px;
+  color: #222;
+  width: 60%;
+  margin: 0.4rem 0 0 -0.1rem;
+}
+
+.insurance-section .coverage {
+  background-color: #a97f3f;
+  padding: 6rem;
+}
+
+.insurance-section .coverage h2 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.insurance-section .coverage .underline {
+  width: 50px;
+  height: 5px;
+  background-color: #ecd680;
+}
+
+.insurance-section .coverage p {
+  color: #fff;
+  width: 75%;
+}
+
+.partner-section .context {
+  padding: 3rem;
+}
+
+.partner-section .partner {
+  margin-top: 8rem;
+}
+
+.partner-section .partner .underline {
+  width: 50px;
+  height: 5px;
+  background-color: #ecd680;
+}
+
+.partner-section .partner p {
+  font-size: 15px;
+  color: #222;
+  width: 60%;
+  margin: 0.4rem 0 0 -0.1rem;
+}
+
+.team-section {
+  background-color: gainsboro;
+  padding: 3rem;
+}
+
+.team-section h2 {
+  color: #111111;
+}
+
+.team-section .underline {
+  width: 50px;
+  height: 5px;
+  background-color: #ecd680;
+  margin-top: 1rem;
+}
+
+.team-section p {
+  color: #333333;
+  font-size: 15px;
+  margin: 1rem;
+}
+
+.team-section .users-profile h3 {
+  margin: 1rem;
+  color: #000;
+}
+
+.sign-up-letter {
+  background-color: #a97f3f;
+  padding: 3rem;
+  color: #fff;
+}
+
+.sign-up-letter p {
+  font-size: 0.7rem;
+}
+
+.sign-up-letter .form-section {
+  padding: 0.4rem;
+}
+
+.sign-up-letter .form-section .input ::-webkit-input-placeholder {
+  color: gray;
+}
+
+.sign-up-letter .form-section .input :-ms-input-placeholder {
+  color: gray;
+}
+
+.sign-up-letter .form-section .input ::-ms-input-placeholder {
+  color: gray;
+}
+
+.sign-up-letter .form-section .input ::placeholder {
+  color: gray;
+}
+
+.sign-up-letter .button .btn {
+  background-color: #ecd680;
+  color: #000;
+}
+
+.sign-up-letter .button .btn:hover {
+  color: #fff;
+}
+
+.white-background .map {
+  margin-top: 2.2rem;
+}
+/*# sourceMappingURL=main.css.map */

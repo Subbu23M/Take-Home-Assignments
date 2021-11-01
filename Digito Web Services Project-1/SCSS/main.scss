@@ -1,0 +1,302 @@
+// Universal Effects
+
+// Added clip-paths from https://bennettfeely.com/clippy/
+
+// Colors
+$pinkColor:#ff006e;
+$greenColor:#0fd996;
+$textColor:#191716;
+
+body{
+    font-family: 'Dosis',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+li{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+button{
+    font-family: 'Dosis',sans-serif;
+}
+
+button:focus{
+    outline: none;
+}
+
+// For Pre-loader 
+.pre-loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+
+    /* z-index:stacks one on each other based on value  */
+    z-index: 999;
+
+    background-color: whitesmoke;
+
+    // Convert row into column
+    display: grid;
+
+    // On X-axis
+    justify-content: center;
+
+    // On Y-axis
+    align-items: center;
+}
+
+.hidePreLoader {
+    visibility: hidden;
+
+    /* z-index:stacks one on each other based on value  */
+    z-index: -999;
+}
+
+p {
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+}
+
+// For Header Section
+header{
+
+    .tex{
+        letter-spacing: 7px;
+        color: crimson;
+    }
+
+    .min-hei{
+        min-height: 100vh;
+    }
+
+    .para{
+        color: darkblue;
+    }
+
+    .head{
+        background: url(../Images/annie-spratt-raULwpl7T6U-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        // If we use object-fit: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+        background-size: cover;
+
+        // Parallax Affects
+        background-attachment: fixed;
+    }
+
+}
+
+
+// For Boxes
+#boxes {
+
+    // For Box-1
+    .dec {
+        color: $pinkColor;
+        padding-left: 4rem;
+    }
+
+    .para {
+        font-style: normal;
+    }
+
+    .wrap {
+        // border:size style color
+        border: 5px solid $pinkColor;
+
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+
+        width: 50%;
+
+        // transition:Default Property Duration
+        // transition-timing-function:linear - specifies a transition effect with the same speed from start to end.
+        transition: all 1s linear;
+
+        // Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+        display: block;
+
+        &:hover {
+            // width: 50%;
+            // height: 50%;
+            border-radius: 50%;
+            border-color: $pinkColor;
+            padding: 1rem;
+        }
+    }
+
+    // For Box-2
+    .furn {
+        padding-top: 2rem;
+
+        .fur {
+            color: $greenColor;
+            padding-left: 3rem;
+        }
+
+        .wrap-fur {
+            // border:size style color
+            border: 5px solid $greenColor;
+
+            border-top-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+
+            width: 50%;
+            height: 50%;
+
+            // transition:Default Property Duration
+            // transition-timing-function:linear - specifies a transition effect with the same speed from start to end.
+            transition: all 1s linear;
+
+            // Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+            display: block;
+
+            &:hover {
+                // width: 50%;
+                // height: 30%;
+                border-radius: 50%;
+                border-color: $greenColor;
+                padding-bottom: 2rem;
+            }
+
+        }
+    }
+
+    // For Box-3
+    .proj {
+        padding-top: 2rem;
+
+        .pro {
+            color: red;
+            padding-left: 3rem;
+        }
+
+        .wrap-pro {
+            // border:size style color
+            border: 5px solid red;
+
+            border-top-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+
+            width: 50%;
+            height: 50%;
+
+            // transition:Default Property Duration
+            // transition-timing-function:linear - specifies a transition effect with the same speed from start to end.
+            transition: all 1s linear;
+
+            // Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+            display: block;
+
+            &:hover {
+                // width: 50%;
+                // height: 30%;
+                border-radius: 50%;
+                border-color: red;
+                padding-bottom: 2rem;
+            }
+
+        }
+    }
+
+}
+
+// Media Queries:
+// For Extra Small Devices (phones, 600px and down)
+
+@media only screen and (max-width:600px) {
+    #boxes {
+
+        .dec {
+            padding-left: 2rem;
+        }
+
+        .furn {
+            .fur {
+                padding-left: 2rem;
+            }
+
+            .wrap-fur {
+                height: 50%;
+                width: 50%;
+
+                &:hover{
+                    // height: 10%;
+                    // width: 50%;
+                    border-radius: 50%;
+                }
+
+            }
+        }
+
+        .proj {
+            .pro {
+                padding-left: 2rem;
+            }
+
+            .wrap-pro {
+                height: 90%;
+
+                &:hover{
+                    // width: 50%;
+                    // height: 10%;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+}
+
+// For About Section
+#about{
+
+    .underline{
+        width: 100px;
+        height: .2rem;
+    }
+
+}
+
+// For Design Section
+#design{
+
+    .underline{
+        width: 230px;
+        height: .2rem;
+    }
+
+}
+
+// For Testimony Section
+#testimony{
+    .underline{
+        width: 140px;
+        height: .2rem;
+    }
+}
+
+// For contact Section
+#contact{
+    .underline{
+        width: 100px;
+        height: .2rem;
+    }
+}

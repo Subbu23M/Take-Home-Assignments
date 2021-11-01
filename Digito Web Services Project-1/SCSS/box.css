@@ -1,0 +1,130 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Dosis', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+#boxes .dec {
+  color: #ff006e;
+  padding-left: 4rem;
+}
+
+#boxes .para {
+  font-style: normal;
+}
+
+#boxes .wrap {
+  border: 5px solid #ff006e;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 50%;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#boxes .wrap:hover {
+  width: 50%;
+  height: 70%;
+  border-radius: 50%;
+  border-color: #ff006e;
+  padding: 1rem;
+}
+
+#boxes .furn {
+  padding-top: 2rem;
+}
+
+#boxes .furn .fur {
+  color: #0fd996;
+  padding-left: 3rem;
+}
+
+#boxes .furn .wrap-fur {
+  border: 5px solid #0fd996;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 50%;
+  height: 60%;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#boxes .furn .wrap-fur:hover {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border-color: #0fd996;
+  padding-bottom: 2rem;
+}
+
+#boxes .proj {
+  padding-top: 2rem;
+}
+
+#boxes .proj .pro {
+  color: red;
+  padding-left: 3rem;
+}
+
+#boxes .proj .wrap-pro {
+  border: 5px solid red;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 50%;
+  height: 60%;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#boxes .proj .wrap-pro:hover {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border-color: red;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #boxes .dec {
+    padding-left: 2rem;
+  }
+  #boxes .furn .fur {
+    padding-left: 2rem;
+  }
+  #boxes .furn .wrap-fur {
+    height: 50%;
+  }
+  #boxes .proj .pro {
+    padding-left: 2rem;
+  }
+  #boxes .proj .wrap-pro {
+    height: 90%;
+  }
+}
+/*# sourceMappingURL=box.css.map */
